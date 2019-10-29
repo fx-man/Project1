@@ -21,9 +21,9 @@ namespace Среднее_арифметическое
             double result = (first + second) / 2;
             Console.WriteLine("Среднее = " + result);
 
-            //оператор swotch
+            //оператор switch
             int a = int.Parse(Console.ReadLine());
-            switch(a)
+            switch (a)
             {
                 case 1:
                     Console.WriteLine("Введено 1");
@@ -31,6 +31,22 @@ namespace Среднее_арифметическое
                 case 2:
                 case 3:
                     Console.WriteLine("Введено 2 или 3");
+                    break;
+                default:
+                    Console.WriteLine("Неизвестный ввод");
+                    break;
+
+            }
+
+            string b = Console.ReadLine();
+            switch (b)
+            {
+                case "+":
+                    Console.WriteLine("Введено +");
+                    break;
+                case "*":
+                case "-":
+                    Console.WriteLine("Введено * или -");
                     break;
                 default:
                     Console.WriteLine("Неизвестный ввод");
